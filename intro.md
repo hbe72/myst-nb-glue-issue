@@ -14,7 +14,9 @@ kernelspec:
 
 ## Just regular image insert
 
-Here {numref}`fig-jupyterbook-left` left aligned, then  {numref}`fig-jupyterbook-center` center aligned and {numref}`fig-jupyterbook-right` right aligned  
+Here {numref}`fig-jupyterbook-left` left aligned, then  {numref}`fig-jupyterbook-center` center aligned and {numref}`fig-jupyterbook-right` right aligned.
+
+This chapter demonstrates that regular figure insertions work just fine.
 
 ```{figure} figs/jupyterbook.png
 ---
@@ -46,6 +48,8 @@ Jypyterbook logo right aligned
 ## Pandas dataframe glued
 
 Here {numref}`tbl-pandas-left` left aligned, then  {numref}`tbl-pandas-center` center aligned and {numref}`tbl-pandas-right` right aligned with random text in between.
+
+This chapter demonstrates that captions adhere to alignment commands but glued pandas dataframes do not.
 
 ```{code-cell} ipython3
 :tags: ["remove-cell"]
@@ -94,7 +98,8 @@ Pandas table right aligned
 ## Pandas dataframe glued without texts in between
 
 Here {numref}`tbl-pandas-left-again` left aligned, then  {numref}`tbl-pandas-center-again` center aligned and {numref}`tbl-pandas-right-again` right aligned.
-This should demonstrate the completely missing table of {numref}`tbl-pandas-center-again` (version dependent).
+
+In addition to the previous chapter this chapter should demonstrate the completely missing table of {numref}`tbl-pandas-center-again` (version dependent). The caption exists but the figure (rendered dataframe) is missing.
 
 ```{glue:figure} glued_df
 :name: "tbl-pandas-left-again"
